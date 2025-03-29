@@ -105,6 +105,25 @@
             breadthElement.value="";
             resultElement.innerText="-";
         }
+        function circle(){
+            const radiusElement=document.getElementById("radius");
+            const r1=radiusElement.value;
+            if(r1==""){
+                alert("please enter radius value");
+                return;
+            }
+            const area= Math.PI*parseInt(r1)*parseInt(r1);
+            const result1Element=document.getElementById("result1");
+            result1Element.innerText=`Area of circle:${area}`;  
+        }
+        
+        function reset1(){
+            const radiusElement = document.getElementById("radius");
+            const result1Element = document.getElementById("result1");
+
+            radiusElement.value="";
+            result1Element.innerText="-";
+        }
     </script>
 </body>
 </html>
