@@ -9,10 +9,40 @@
             display: flex;
             justify-content: center;
             }
+        .sub-container{
+            width: 40%;
+            margin: 50px;
+            padding: 10px;
+            border: 2px solid #c56206;
+            background-color: #FFAB5B;
+        }
+        .input-box{
+            margin: 15px;
+            margin-left: 25%;
+            width: 50%;
+            height: 30px;
+            font-size: 100%;
+            border-radius: 5px;
+        }
+        .input-box:focus{
+            outline: none;
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="sub-container">
+            <div class="rectangle">
+                <h2 style="text-align: center;">Area of the rectangle</h2>
+                <input type="number" class="input-box" placeholder="enter the length" id="length"><br>
+                <input type="number" class="input-box" placeholder="enter the breadth" id="breadth"><br>
+                <b><p class="result" id="result" >-</p></b>
+                <button class="btn btn1">reset</button>
+                <button class="btn btn2">calculate</button>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
