@@ -96,6 +96,15 @@
             resultElement.innerText=`Area of rectangle:${total}`;
 
         }
+        function reset(){
+            const lengthElement = document.getElementById("length");
+            const breadthElement = document.getElementById("breadth");
+            const resultElement = document.getElementById("result");
+
+            lengthElement.value="";
+            breadthElement.value="";
+            resultElement.innerText="-";
+        }
     </script>
 </body>
 </html>
